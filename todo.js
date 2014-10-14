@@ -2,7 +2,9 @@ angular.module('todoApp', [])
   .controller('TodoController', ['$scope', function($scope) {
     $scope.todos = [
       {text:'learn angular', done:true},
-      {text:'build an angular app', done:false}];
+      {text:'build an angular app', done:false},
+	  {text: '???', done:false},
+	  {text: 'world domination', done:false}];
  
     $scope.addTodo = function() {
       $scope.todos.push({text:$scope.todoText, done:false});
